@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ebba60, #cf8dc1);
+}
+
+i {
+    color: #1c3be7;
+}
+
+.introduce {
+    color: #fff;
+}
+
+.resume {
+    width: 800px;
+    background: #fff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left {
+    background: #ec9062;
+    width: 290px;
+    padding: 0 20px;
+}
+
+.right {
+    width: calc(100% - 250px);
+}
+
+.left .img_holder {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: #3525af;
+}
+
+.left .icon {
+    font-size: 20px;
+    color: #9153c9;
+}
+
+.left .text {
+    color: #9153c9;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.contact .li_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact .li_wrap .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: #fff;
+}
+
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap {
+    background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text {
+    margin-top: 5px;
+}
+
+.hobbies .li_wrap {
+    border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text {
+    color: #fff;
+}
+
+.hobbies .li_wrap:hover {
+    background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text {
+    color: #9153c9;
+}
+
+.header {
+    background: #ec9062;
+    padding: 15px 30px;
+    color: #fff;
+    height: 240px;
+}
+
+.header .name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3525af;
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 20px;
+    line-height: 26px;
+    font-family: Lobster Two;
+}
+
+.right_inner {
+    padding: 30px;
+    color: #292b2f;
+}
+
+.right_inner .education {
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #1c3be7;
+}
+
+.right_inner .li_wrap .info {
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right_inner .li_wrap .info_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1c3be7;
+}
+
+.right_inner .li_wrap .info_com {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont {
+    margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #1c3be7;
+    border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background: #1c3be7;
+}
+
+.progress-container {
+    position: relative;
+}
+
+.progress-container+.progress-container,
+.progress-container~.progress-container {
+    margin-top: 15px;
+}
+
+.progress-container .progress-badge {
+    color: #888;
+    font-size: 0.8571em;
+    text-transform: uppercase;
+}
+
+.progress-container .progress {
+    height: 6px;
+    width: 380px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: rgba(222, 222, 222, 0.8);
+    margin-top: 14px;
+}
+
+.progress-container .progress .progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.progress-container .progress .progress-value {
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.progress-container.progress-neutral .progress {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.progress-container.progress-neutral .progress-bar {
+    background: #FFFFFF;
+}
+
+.progress-container.progress-neutral .progress-value,
+.progress-container.progress-neutral .progress-badge {
+    color: #FFFFFF;
+}
+
+.progress-container.progress-primary .progress {
+    background: rgba(206, 206, 206, 0.6);
+}
+
+.progress-container.progress-primary .progress-bar {
+    background: #ec9062;
+}
+
+.progress-container.progress-primary .progress-value,
+.progress-container.progress-primary .progress-badge {
+    color: #1c3be7;
+}
+
+.progress-container.progress-info .progress {
+    background: rgba(44, 168, 255, 0.3);
+}
+
+.progress-container.progress-info .progress-bar {
+    background: #2CA8FF;
+}
+
+.progress-container.progress-info .progress-value,
+.progress-container.progress-info .progress-badge {
+    color: #2CA8FF;
+}
+
+.progress-container.progress-success .progress {
+    background: rgba(24, 206, 15, 0.3);
+}
+
+.progress-container.progress-success .progress-bar {
+    background: #18ce0f;
+}
+
+.progress-container.progress-success .progress-value,
+.progress-container.progress-success .progress-badge {
+    color: #18ce0f;
+}
+
+.progress-container.progress-warning .progress {
+    background: rgba(255, 178, 54, 0.3);
+}
+
+.progress-container.progress-warning .progress-bar {
+    background: #FFB236;
+}
+
+.progress-container.progress-warning .progress-value,
+.progress-container.progress-warning .progress-badge {
+    color: #FFB236;
+}
+
+.progress-container.progress-danger .progress {
+    background: rgba(255, 54, 54, 0.3);
+}
+
+.progress-container.progress-danger .progress-bar {
+    background: #FF3636;
+}
+
+.progress-container.progress-danger .progress-value,
+.progress-container.progress-danger .progress-badge {
+    color: #FF3636;
+}
+
+.card {
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+    min-height: 190px;
+}
+
+.card[data-background-color="orange"] {
+    background-color: #378C3F;
+}
+
+.card[data-background-color="red"] {
+    background-color: #FF3636;
+}
+
+.card[data-background-color="yellow"] {
+    background-color: #FFB236;
+}
+
+.card[data-background-color="blue"] {
+    background-color: #2CA8FF;
+}
+
+.card[data-background-color="green"] {
+    background-color: #18ce0f;
+}
+
+.card-signup {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.card-signup .header {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px 0;
+}
+
+.card-signup .text-divider {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.card-signup .card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: auto;
+}
+
+.card-signup .checkbox {
+    margin-top: 20px;
+}
+
+.card-signup .checkbox label {
+    margin-left: 17px;
+}
+
+.card-signup .checkbox .checkbox-material {
+    padding-right: 12px;
+}
+
+.card-signup .social-line {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-signup .social-line .btn.btn-icon,
+.card-signup .social-line .btn.btn-icon .btn-icon -mini {
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-signup .footer {
+    margin-bottom: 10px;
+    margin-top: 24px;
+}
+
+.card-plain {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card-plain .header {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card-plain .content {
+    padding-left: 0;
+    padding-right: 0;
+}
